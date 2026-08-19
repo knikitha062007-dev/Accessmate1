@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: #f7f9fb;
+  --foreground: #19324d;
+  --card: #ffffff;
+  --card-foreground: #19324d;
+  --primary: #1e3a5f;
+  --primary-foreground: #ffffff;
+  --secondary: #e9f6f4;
+  --secondary-foreground: #126b64;
+  --muted: #f0f4f6;
+  --muted-foreground: #64778b;
+  --border: #dce5eb;
+  --ring: #0d9488;
+}
+
+* { border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--background); color: var(--foreground); font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, [role="button"] { transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease, transform 150ms ease; }
+button:active, [role="button"]:active { transform: scale(0.985); }
+:focus-visible { outline: 3px solid color-mix(in srgb, var(--ring) 38%, transparent); outline-offset: 3px; }
+::selection { background: #c8eee9; color: #19324d; }

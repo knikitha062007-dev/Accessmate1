@@ -1,0 +1,23 @@
+# Project TODO
+
+- [x] Establish AccessMate data models for user language preferences, documents, and future document-analysis records.
+- [x] Add database migration and query helpers for document metadata, S3 references, extracted text, and language preferences.
+- [x] Implement secure PDF upload validation for MIME type, PDF signature, size limit, empty PDFs, and corrupted PDFs.
+- [x] Store validated PDF files in managed object storage and persist document metadata with extracted text.
+- [x] Implement document procedures for upload, list, retrieve by ID, and delete.
+- [x] Implement a persisted language-preference procedure for English, Telugu, and Hindi.
+- [x] Build the branded landing page with the exact tagline, theme badges, and Try AccessMate CTA.
+- [x] Build responsive dashboard, document detail, and settings pages with clear top navigation.
+- [x] Add processing indicators, extracted-text preview, and an explicit future-AI placeholder without AI functionality.
+- [x] Add accessible keyboard, focus, loading, empty, and error states across the interface.
+- [x] Add unit tests for document validation, text extraction workflow, language choices, and procedures.
+- [x] Run type checks and tests, visually verify desktop and mobile layouts, and save the finished checkpoint.
+- [x] Add language-aware document-text procedures for simplify, translation, and answers grounded only in extracted text.
+- [x] Use each signed-in user's saved language preference as the default language on a processed document.
+- [x] Add functional Simplify, Translate, Listen, and Ask Document controls to the existing processed-document page.
+- [x] Test the upload-to-extraction-to-simplify-to-translation-to-listen-to-question flow and verify no existing functionality regresses.
+- [x] Fix the Listen control to toggle Start and Stop, reset on completion or cancellation, and prevent overlapping browser speech.
+- [x] Test browser speech start, stop, end, cancellation, and button-state reset without changing other AccessMate functionality.
+- [x] Redesign only the AccessMate visual system with a minimal navy, teal, white, and light-gray SaaS style.
+- [x] Apply the redesigned presentation consistently to the landing page, navbar, dashboard, upload, document, and settings screens without altering features or routes.
+- [x] Verify desktop and mobile visual consistency and re-run existing functional tests without backend or API changes.
